@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    box-sizing: border-box;
+    /* font-family: cursive; */
+    transition: .4s;
+}
+
+/* *************************************  NAVBAR   **************************************** */
+
+#navbar{
+    position: fixed;
+    color: white;
+    background-color: black;
+    width: 100%;
+    z-index: 333;
+}
+
+#navbarNavAltMarkup{
+    margin-left: 70%;
+}
+
+#navbarNavAltMarkup a{
+    color: white;
+}
+.navbar-brand b{
+    color: #006666;
+}
+.navbar-brand span{
+    color: white;
+}
+#nav-btn{
+    border: none;
+    outline: none;
+    color: white;
+}
+
+/* *************************************  HOME   **************************************** */
+#home{
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(../images/woe.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#home #top-desc{
+    margin-top: 25%;
+}
+#home #top-desc b{
+    color: #006666;
+}
+#home .col-lg-6 img{
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+.home-content b{
+    color: #006666;
+}
+
+#home button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #006666;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#home button:hover{
+    padding: 5px 15px;
+    color: #031818;
+    background: #04b1b1;
+}
+
+
+/* *************************************  ABOUT   **************************************** */
+
+#about{
+    color: white;
+    background: black;
+}
+#about .col-lg-6 img{
+    height: 100%;
+    width: 100%;
+}
+#about button{
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #006666;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+#about button:hover{
+    color: #006666;
+}
+#about #edu-btn{
+    border-bottom: none;
+}
+#education{
+    display: none;
+}
+
+/* skills */
+
+#skills{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.skill{
+    margin-bottom: 20px;
+}
+.skill-range{
+    background: rgba(128, 128, 128, 0.562);
+    height: 20px;
+    width: 100%;
+    border-radius: 30px;
+}
+.skill-perentage{
+    background: linear-gradient(-45deg, #019494, #000c0c);
+    color: white;
+    height: 20px;
+    width: 50%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    border-radius: 30px;
+}
+.html{
+    width: 95%;
+}
+.css{
+    width: 85%;
+}
+.bs{
+    width: 75%;
+}
+.js{
+    width: 55%;
+}
+.php{
+    width: 55%;
+}
+.sql{
+    width: 47%;
+}
+.react{
+    width: 30%;
+}
+
+/* education */
+
+#education{
+    height: 100%;
+    width: 100%;
+}
+#education span{
+    color: grey;
+}
+#education p{
+    color: rgb(204, 202, 202);
+}
+
+/* *************************************  WORK   **************************************** */
+#work{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+#work .row{
+    display: flex;
+    justify-content: center;
+}
+#work .card{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    position: relative;
+}
+#work .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#work .card:hover #img{
+    transform: scale(2,2);
+}
+#work .card:hover{
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    transform: scale(1,1.1);
+}
+#work .card .content{
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    background:linear-gradient(transparent, #006666, black);
+    text-align: center;
+    padding-top: 25%;
+    color: white;
+    overflow: hidden;
+    bottom: 0;
+}
+#work .card:hover:hover .content{
+    height: 100%;
+}
+/* more works */
+
+#more-works{
+    display: none;
+    overflow: hidden;
+}
+#moreBtn{
+    align-items: center;
+    padding: 8px 20px;
+    background: black;
+    color: #006666;
+    margin: 20px 0px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#moreBtn:hover{
+    color: aliceblue;
+}
+
+/* *************************************  LUKAS   **************************************** */
+
+#lukas{
+    height: 40vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: url(../images/bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#lukas b{
+    color: #04aaaa;
+}
+
+/* *************************************  CONTACT   **************************************** */
+
+#contact{
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.863);
+}
+#contact a{
+    background-color: bisque;
+    padding: 2px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #006666;
+}
+#contact a:hover{
+    color: bisque;
+    padding: 2px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #006666;
+    font-weight: bold;
+}
+#contact input, #contact textarea{
+    margin-bottom: 10px;
+    border: none;
+    outline:none;
+    background: rgb(0, 15, 15);
+    color: white;
+    box-shadow: none;
+}
+#contact input:focus, #contact textarea:focus{
+    border: none;
+    outline:none;
+    background: rgb(0, 31, 31);
+}
+
+#contact button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    background: #006666;
+    color: white;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+#contact button:hover{
+    background: #03d8d8;
+    color: rgb(131, 132, 133);
+    
+}
+
+
+
+#last-footer{
+    background: rgb(0, 15, 15);
+    color: rgba(255, 255, 255, 0.603);
+    height: 30px;
+    width: 100%;
+}
+
+
+
+

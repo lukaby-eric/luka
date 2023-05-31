@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!---------------------------------------------- Navbar ---------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home "><b>Lu</b><span>kas</span></a>
+            <button id="nav-btn" class="fa fa-bars navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" id="nav-links">
+                <div><a class="nav-item nav-link" href="#about">About</a></div>
+                <div><a class="nav-item nav-link" href="#work">Projects</a></div>
+                <div><a class="nav-item nav-link" href="#">Resume</a></div>
+                <div><a class="nav-item nav-link" href="#contact">Contact</a></div>
+            </div>
+            </div>
+        </div>
+    </nav>  
+
+<!---------------------------------------------- HOME ---------------------------------------------->
+
+
+<section id="home">
+    <div class="container">
+        <div class="row">
+            <div class="home-content">
+                <h1>Hi, I'm <b>LUKABYA</b></h1><br>
+                <h3>Frontend Developer</h3>
+                <p>High level knowledge in web design and development, producing quality work</p>
+
+                <button>Download my CV <i class="fa fa-download"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------- ABOUT ---------------------------------------------->
+
+
+<section id="about">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-lg-6">
+                <img src="assets/images/lukas2.png" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h2>About me</h2>
+                <p>I am a Passionate Web designer; I have unending enthusiasm for solving problems. 
+                    I understand that there is no better way to learn than working on challenges. 
+                    I always scout for a good one to try my expertise on.</p>
+
+                    <button onclick="skill()" id="skill-btn">Skills</button><button onclick="educatio()" id="edu-btn">Education</button>
+
+                    <div id="skills">
+                        <div class="skill">
+                            <div class="skill-title">HTML</div>
+                            <div class="skill-range"></div>
+                            <div class="html skill-perentage">90%</div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-title">CSS</div>
+                            <div class="skill-range"></div>
+                            <div class="css skill-perentage">80%</div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-title">BOOTSTRAP</div>
+                            <div class="skill-range"></div>
+                            <div class="bs skill-perentage">70%</div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-title">JAVASCRIPT</div>
+                            <div class="skill-range"></div>
+                            <div class="js skill-perentage">50%</div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-title">PHP</div>
+                            <div class="skill-range"></div>
+                            <div class="php skill-perentage">50%</div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-title">MySQL</div>
+                            <div class="skill-range"></div>
+                            <div class="sql skill-perentage">45%</div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-title">React</div>
+                            <div class="skill-range"></div>
+                            <div class="react skill-perentage">30%</div>
+                        </div>
+                    </div>
+                    <div id="education">
+                        <h6>METROPOLITAN COMMUNITY COLLEGE, Kansas City, Mo</h6>
+                        <span>From: Feb 2022 to Present</span>
+                        <p class="pt-3">I am Currently enrolled, pursuing a degree in software development.</p>
+
+                        <h6>ALIGHT CODING SCHOOL, Kigali, Rwa</h6>
+                        <span>From: Feb 2018 to Nov 2019</span>
+                        <p class="pt-3">I studies the foundamental of programing, <br> and learned the basics of Web design and database management.
+                             <br>I used HTML, CSS, BOOTSTRAP, PHP and, JAVASCRIPT to developed different 
+                            websites for refugees who had businesses in Gihembe refugee camp, Rwanda. which made it
+                             easier for them to advertise their products on the internet</p>
+
+                        <h6>GS. BYUMBA INYANGE, KIGALI, Rwa</h6>
+                        <span>From: Feb 2014 to Nov 2017</span>
+                        <p class="pt-3">I graduated Highschool with a GPA of 3.2 in Math, Computer science, Entrepreneurship and Economics.</p>
+
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------- Works ---------------------------------------------->
+
+<section id="work">
+    <div class="container py-5">
+        <h2 class="py-4">My Work</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/social.jpg" id="img">
+                    <div class="content">
+                        <div class="container">
+                            <h6>Socialmedia Websites</h6>
+                            <p>I design good, user friendly and responsive 
+                                social media platform.
+                            </p>
+                            <a href="">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/ecommerce.jpg" id="img">
+                    <div class="content">
+                        <div class="container">
+                            <h6>E-commerce Websites</h6>
+                            <p>I design good, user friendly and responsive 
+                                 online shopping websites.
+                            </p>
+                            <a href="">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/blog.jpg" id="img">
+                    <div class="content">
+                        <div class="container">
+                            <h6>Personal blog Websites</h6>
+                            <p>I design amazing, attractive and responsive 
+                                social personal blog.
+                            </p>
+                            <a href="">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- more -->
+
+        <button id="moreBtn" onclick="MoreProjects()">See More...</button>
+        </div>
+
+
+
+        <div id="more-works">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/starbucs.jpg" id="img">
+                        <div class="content">
+                            <div class="container">
+                                <h6>Web Landing page</h6>
+                                <p>Check my awesome and responsive 
+                                    starbucs landing page.
+                                </p>
+                                <a href="https://lukaby-eric.github.io/starbucks/">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/netflix.jpg" id="img">
+                        <div class="content">
+                            <div class="container">
+                                <h6>Netflix Movie Home page</h6>
+                                <p>Check my awesome and responsive 
+                                    The Flash movie home page.
+                                </p>
+                                <a href="https://lukaby-eric.github.io/netflix/">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/blog.jpg" id="img">
+                        <div class="content">
+                            <div class="container">
+                                <h6>Personal blog Websites</h6>
+                                <p>I design amazing, attractive and responsive 
+                                    social personal blog.
+                                </p>
+                                <a href="">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- less -->
+                <button id="moreBtn" onclick="LessProjects()">See Less...</button>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<!---------------------------------------------- Lukas ---------------------------------------------->
+
+<section id="lukas">
+    <div class="container">
+        <h3>"I strive for two things in design:
+             <b>simplicity</b> and <b>clarity</b>. Great design is born of those two things."</h3>
+    </div>
+</section>
+
+<!---------------------------------------------- Contact me ---------------------------------------------->
+
+<section id="contact">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-lg-6">
+                <h2>Contact Me</h2>
+                <p><i class="fa fa-envelope"></i> ericlukabya@gmail.com</p>
+                <p><i class="fa fa-phone"></i> (816) 914 4602</p>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/lukabya-lubingo-114a54277/"><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a><br>
+                <button>Download CV <i class="fa fa-download"></i></button>
+            </div>
+            <div class="col-lg-6">
+                <form action="">
+                    <input type="text" class="form-control" placeholder="Your Name.." required>
+                    <input type="email" class="form-control" placeholder="Your Email address..." required>
+                    <textarea name="" id="" class="form-control" placeholder="Type Your Message..." required></textarea>
+                    <button><i class="fa fa-send"></i> Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="text-center" id="last-footer">
+    <p>Copyright &copy; Lukabya.</p>
+</div>
+
+<!-- -------------------------------------------- Bottstrap js links--------------------- -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="assets/js/script.js"></script>
+
+    </body>
+</html>
